@@ -246,3 +246,21 @@ MYSQL_MAILDIR_FIELD	maildir
 `netstat -nltp | egrep '25|143|3306`
 
 ### Thunderbird
+- **Installing Thunderbird :**
+`sudo apt-get install thunderbird`
+- **Creating an account :**  
+  
+Part 1                     |  Part 2
+:-------------------------:|:-------------------------:
+![Part1](https://github.com/ohidaoui/Postfix-Mail-Server/blob/5876172c67053d01d1dc63d076661e971f47c734/screenshots/create_account_1.PNG "Part1")  |  ![Part2 ](https://github.com/ohidaoui/Postfix-Mail-Server/blob/5876172c67053d01d1dc63d076661e971f47c734/screenshots/create_account_2.PNG "Part2")   
+
+- **Compossing a message :**  
+<p align="center"><img width="80%" src="https://github.com/ohidaoui/Postfix-Mail-Server/blob/8ef09f715fce6daee7e76984b8082745a1308fcf/screenshots/mail_compose.PNG"></p>
+
+- **Checking if the message is sent :**  
+1. Mail file
+`nano /var/spool/mail/vmail/1`
+<p align="center"><img width="80%" src="https://github.com/ohidaoui/Postfix-Mail-Server/blob/8ef09f715fce6daee7e76984b8082745a1308fcf/screenshots/mail_file.PNG"></p>
+
+2. Thunderbird
+<p align="center"><img width="80%" src="https://github.com/ohidaoui/Postfix-Mail-Server/blob/8ef09f715fce6daee7e76984b8082745a1308fcf/screenshots/mail_sent.PNG"></p>
