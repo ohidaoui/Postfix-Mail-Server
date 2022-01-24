@@ -190,8 +190,8 @@ postmap -q me.lan mysql:/etc/postfix/mysql-virtual-mailbox-domains.cf
 ```
 At this moment we are going to ensure Postfix finds your mail users address with the following commands. They should return 1.  
 ```
-postmap -q user0@me,lan mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf
-postmap -q user1@me,lan mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf
+postmap -q user0@me.lan mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf
+postmap -q user1@me.lan mysql:/etc/postfix/mysql-virtual-mailbox-maps.cf
 ```
   
 ## Courier IMAP
@@ -243,7 +243,7 @@ MYSQL_MAILDIR_FIELD	maildir
 `/etc/init.d/courier-imap restart`  
 
 - Make sure Postfix, CourierIMAP and MySQL Services are Running  
-`netstat -nltp | egrep '25|143|3306`
+`netstat -nltp | egrep '25|143|3306'`
 
 ### Thunderbird
 - **Installing Thunderbird :**
