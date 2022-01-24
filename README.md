@@ -244,6 +244,7 @@ MYSQL_MAILDIR_FIELD	maildir
 
 - Make sure Postfix, CourierIMAP and MySQL Services are Running  
 `netstat -nltp | egrep '25|143|3306'`
+<p align="center"><img width="80%" src="https://github.com/ohidaoui/Postfix-Mail-Server/blob/3bf1d613384b81d9086d6a133e02c6a374aaa048/screenshots/ports.PNG"></p>
 
 ### Thunderbird
 - **Installing Thunderbird :**
