@@ -266,7 +266,15 @@ MYSQL_LOGIN_FIELD	email
 MYSQL_HOME_FIELD	home
 MYSQL_MAILDIR_FIELD	maildir
 ```
-
+#### Final step
+To ensure that errors of type ***Filesystem notification initialization*** will not occure in mail client side, install **Gamin** package.
+```sh
+sudo apt-get install gamin
+```
+And then restart ***courier-imap*** service.
+```sh
+sudo /etc/init.d/courier-imap restart
+```
 ## Testing
 - Ensure that all services are restarted.  
 ```sh
